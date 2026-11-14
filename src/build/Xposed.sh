@@ -24,37 +24,37 @@ patch_dl(){
 	# Patch Facebook:
 	version="587.0.0.39.55"
 	get_apk "com.facebook.katana" "facebook-arm64-v8a" "bundle" "arm64-v8a" "240-640dpi" "Android 11+"
-	lspatch "facebook-arm64-v8a" "NexAlloy*.apk" "gnadgnaoh" "--injectdex --sigbypasslv 3"
+	lspatch "facebook-arm64-v8a" "patch.apk" "gnadgnaoh" "--injectdex --sigbypasslv 3"
 	# Patch Messenger:
 	get_apk "com.facebook.orca" "messenger-arm64-v8a" "apk" "arm64-v8a" "nodpi" "Android 9.0+"
-	lspatch "messenger-arm64-v8a" "NexAlloy*.apk" "gnadgnaoh" "--injectdex --sigbypasslv 3"
+	lspatch "messenger-arm64-v8a" "patch.apk" "gnadgnaoh" "--injectdex --sigbypasslv 3"
 }
 3() {
 	LSPatch_dl
 	patch_dl
 	# Patch Instagram:
 	get_apk "com.instagram.android" "instagram-arm64-v8a" "bundle" "arm64-v8a" "120-640dpi"  "Android 9.0+"
-	lspatch "instagram-arm64-v8a" "NexAlloy*.apk" "gnadgnaoh" "--injectdex --sigbypasslv 3"
+	lspatch "instagram-arm64-v8a" "patch.apk" "gnadgnaoh" "--injectdex --sigbypasslv 3"
 	# Patch Thread:
 	get_apk "com.instagram.barcelona" "threads-arm64-v8a" "bundle" "arm64-v8a" "160-640dpi" "Android 9.0+"
-	lspatch "threads-arm64-v8a" "NexAlloy*.apk" "gnadgnaoh" "--injectdex --sigbypasslv 3"
+	lspatch "threads-arm64-v8a" "patch.apk" "gnadgnaoh" "--injectdex --sigbypasslv 3"
 }
 4() {
 	LSPatch_dl
 	patch_dl
 	# Patch Zalo:
 	get_apkpure "com.zing.zalo" "zalo" "bundle"
-	lspatch "zalo" "NexAlloy*.apk" "gnadgnaoh" "--injectdex --sigbypasslv 3"
+	lspatch "zalo" "patch.apk" "gnadgnaoh" "--injectdex --sigbypasslv 3"
 }
 5() {
 	dl_gh "NPatch" "7723mod" "v1.0.5"
 	patch_dl
 	# Patch Tiktok:
 	get_apk "com.zhiliaoapp.musically" "tiktok" "apk"
-	npatch "tiktok" "NexAlloy*.apk" "gnadgnaoh" "--sigbypasslv 3"
+	npatch "tiktok" "patch.apk" "gnadgnaoh" "--sigbypasslv 3"
 	# Patch Tiktok Asian:
 	get_apk "com.ss.android.ugc.trill" "tiktok-asian" "apk"
-	npatch "tiktok-asian" "NexAlloy*.apk" "gnadgnaoh" "--sigbypasslv 3"
+	npatch "tiktok-asian" "patch.apk" "gnadgnaoh" "--sigbypasslv 3"
 }
 case "$1" in
     1)
