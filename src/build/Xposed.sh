@@ -9,7 +9,7 @@ NPatch_dl(){
 	dl_gh "NPatch" "7723mod" "latest"
 }
 patch_dl(){
-	dl_gh "NexAlloy" "gnadgnaoh" "v1.0"
+	dl_gh alloy" "siritami" "up"
 }
 1() {
 	# Patch Revenge:
@@ -22,8 +22,8 @@ patch_dl(){
 	LSPatch_dl
 	patch_dl
 	# Patch Facebook:
-	version="586.0.0.52.53"
-	get_apk "com.facebook.katana" "facebook-arm64-v8a" "bundle" "arm64-v8a" "120-640dpi" "Android 11+"
+	version="587.0.0.39.55"
+	get_apk "com.facebook.katana" "facebook-arm64-v8a" "bundle" "arm64-v8a" "240-640dpi" "Android 11+"
 	lspatch "facebook-arm64-v8a" "NexAlloy*.apk" "gnadgnaoh" "--injectdex --sigbypasslv 3"
 	# Patch Messenger:
 	get_apk "com.facebook.orca" "messenger-arm64-v8a" "apk" "arm64-v8a" "nodpi" "Android 9.0+"
