@@ -9,7 +9,7 @@ NPatch_dl(){
 	dl_gh "NPatch" "7723mod" "latest"
 }
 patch_dl(){
-	dl_gh alloy" "siritami" "up"
+	dl_gh "alloy" "siritami" "up"
 }
 1() {
 	# Patch Revenge:
